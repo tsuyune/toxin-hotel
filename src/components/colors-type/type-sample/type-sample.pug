@@ -1,0 +1,4 @@
+mixin type-sample(tag='p', type='body', text='')
+  include ../../../mixins/type
+  +type('p', type, (type=='body' ? 'Body' : tag.toUpperCase()), 'type-sample__name')
+  +type(tag, type, text)

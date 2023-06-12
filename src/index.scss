@@ -1,0 +1,19 @@
+@import 'scss/_variables';
+@import 'scss/_mixins';
+@import 'scss/_font-face';
+@import 'scss/_type';
+
+@import 'layout/ui-kit';
+@import 'components/colors-type/type-sample/type-sample';
+@import 'components/colors-type/color-sample/color-sample';
+@import 'colors-type';
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

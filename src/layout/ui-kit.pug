@@ -1,0 +1,14 @@
+block variables
+
+doctype html
+html(lang='en')
+  include ../includes/head/head.pug
+  +head(title)
+  body
+    header
+      .header-wrapper
+        include ../components/logo/logo.pug
+        +logo(48, 48, false)
+    main
+      block content
+    script(src = require('../index.js') defer = 'defer')

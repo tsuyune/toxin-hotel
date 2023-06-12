@@ -1,0 +1,41 @@
+%common-type {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 700;
+
+    color: $clr-dark-100p;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1 {
+    @extend %common-type;
+
+    font-size: 2.4rem;
+    line-height: 1.2083;
+}
+
+.h2 {
+    @extend %common-type;
+
+    font-size: 1.9rem;
+    line-height: 1.4737;
+}
+
+.h3 {
+    @extend %common-type;
+
+    font-size: 1.2rem;
+    line-height: 1.25;
+
+    text-transform: uppercase;
+}
+
+.body {
+    @extend %common-type;
+
+    font-weight: 400;
+
+    font-size: 1.4rem;
+    line-height: 1.7143;
+}

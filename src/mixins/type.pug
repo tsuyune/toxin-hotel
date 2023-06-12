@@ -1,0 +1,2 @@
+mixin type(tag='p', type='body', text='', className='')
+    #{tag}(class= className == '' ? type : type + ' ' + className)=text
