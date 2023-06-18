@@ -2,24 +2,28 @@
   margin-top: 6.45rem;
   margin-left: 14.25rem;
   margin-right: 14.95rem;
+  margin-bottom: 14.5rem;
+  
+  gap: 10rem 0;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
 }
 
 .colors__wrapper {
-  display: flex;
-  flex-direction: column;
+  max-width: 28.126rem;
   gap: 2rem;
 
-  max-width: 28.126rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .type__wrapper {
-  display: grid;
-  grid-template-columns: auto auto;
+  max-width: 43.6rem;
   gap: 4.75rem 3rem;
 
-  max-width: 43.6rem;
+  display: grid;
+  grid-template-columns: auto auto;
 }

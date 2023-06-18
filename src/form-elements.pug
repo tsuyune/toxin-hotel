@@ -1,0 +1,15 @@
+extends layout/ui-kit.pug
+
+include components/text-field/text-field
+
+block variables
+  - var title = 'Form Elements';
+
+block content
+  .form-elements__wrapper
+    .form-elements__columns
+      .form-elements__column
+        +text-field('email', 'email', 'Text Field', 'Email', '32', '32', true, 'email')
+        +text-field('text', 'date', 'masked text field', 'ДД.ММ.ГГГГ', '32', '32', true, 'date')
+      .form-elements__column
+      .form-elements__column

@@ -21,13 +21,17 @@
     "@babel/core": "7.21.8",
     "@babel/preset-env": "7.21.5",
     "@fullhuman/postcss-purgecss": "5.0.0",
+    "@prettier/plugin-pug": "2.5.1",
     "auto-live-reload-webpack-plugin": "1.0.4",
     "babel-loader": "9.1.2",
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "11.0.0",
     "css-loader": "6.7.3",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
     "postcss": "8.4.23",
     "postcss-loader": "7.3.0",
+    "prettier": "2.8.8",
     "pug-plugin": "4.9.7",
     "sass": "1.62.0",
     "sass-loader": "13.2.2",
@@ -37,6 +41,8 @@
     "webpack-remove-empty-scripts": "1.0.3"
   },
   "dependencies": {
+    "jquery": "3.7.0",
+    "jquery-mask-plugin": "1.14.16",
     "pug": "3.0.2"
   }
 }

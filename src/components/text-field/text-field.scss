@@ -1,0 +1,29 @@
+.text-field {
+    &__label {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            .text-field__input {
+                border: 0.1rem solid $clr-dark-50p;
+                color: $clr-dark-75p;
+            }
+        }
+    }
+
+    &__input {
+        padding: 1.5rem 1.3rem;
+        
+        border: 0.1rem solid $clr-dark-25p;
+        border-radius: 0.4rem;
+        color: $clr-dark-25p;
+
+        transition: all 0.3s ease-in-out;
+
+        &:focus, &:active {
+            outline: none;
+            border: 0.1rem solid $clr-dark-50p;
+            
+            color: $clr-dark-75p;
+        }
+    }
+}

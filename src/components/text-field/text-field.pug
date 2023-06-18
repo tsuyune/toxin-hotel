@@ -1,0 +1,14 @@
+include ../../mixins/type
+
+mixin text-field(type='text', name='', label=name, placeholder=name, size='64', maxLength='64', isRequired=false, mask=false)
+  label.text-field__label
+    +type('h3', 'h3', label, 'text-field__label_text')
+    input.body.text-field__input(
+      type=type,
+      name=name,
+      placeholder=placeholder,
+      size=size,
+      maxlength=maxLength,
+      required=isRequired,
+      class=mask
+    )

@@ -1,8 +1,9 @@
 .color {
   &-sample {
+    gap: 4rem;
+    
     display: flex;
     align-items: center;
-    gap: 4rem;
 
     &__box {
       width: 7rem;

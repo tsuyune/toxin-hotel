@@ -1,0 +1,8 @@
+.form-elements__wrapper {
+  
+  &__columns {
+    @include grid('max-content max-content max-content', 'initial')
+  }
+
+  &__column {}
+}

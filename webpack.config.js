@@ -1,15 +1,16 @@
 const path = require('path');
+const webpack = require('webpack');
 const PugPlugin = require('pug-plugin');
 
 module.exports = {
-  output: {
-    path: path.join(__dirname, '/dist'),
-    publicPath: '/',
-  },
-
   entry: {
     'index': './src/index.pug',
-    'colors-type': './src/colors-type.pug'
+    'colors-type': './src/colors-type.pug',
+    'form-elements': './src/form-elements.pug'
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/'
   },
 
   mode: 'development',
@@ -19,11 +20,11 @@ module.exports = {
       pretty: true, // formatting HTML, useful for development mode
       js: {
         // output filename of extracted JS file from source script
-        filename: './js/[name].[contenthash:8].js',
+        filename: 'js/[name].[contenthash:8].js',
       },
       css: {
         // output filename of extracted CSS file from source style
-        filename: './css/[name].[contenthash:8].css',
+        filename: 'css/[name].[contenthash:8].css',
       },
     }),
   ],
@@ -40,7 +41,7 @@ module.exports = {
     },
     {
       test: /\.(css|sass|scss)$/,
-      use: ['css-loader', 'postcss-loader', 'sass-loader'],
+      use: ['css-loader', 'sass-loader'],
     },
     {
       test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
@@ -52,6 +53,7 @@ module.exports = {
     },
     ],
   },
+
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),

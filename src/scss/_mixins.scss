@@ -1,0 +1,10 @@
+@mixin grid($columns, $rows) {
+    display: grid;
+    @if $columns {
+        grid-template-columns: $columns;
+    }
+
+    @if $rows {
+        grid-template-rows: $rows;
+    }
+}
