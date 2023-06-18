@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const PugPlugin = require('pug-plugin');
 
 module.exports = {
@@ -9,6 +8,7 @@ module.exports = {
     'form-elements': './src/form-elements.pug'
   },
   output: {
+    filename: '[name].js',
     path: path.join(__dirname, 'dist'),
     publicPath: '/'
   },
