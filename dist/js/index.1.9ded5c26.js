@@ -20,14 +20,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/pages/index.js":
+/*!****************************!*\
+  !*** ./src/pages/index.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_text_field_text_field__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/text-field/text-field */ \"./src/components/text-field/text-field.js\");\n\n\n//# sourceURL=webpack://toxin-hotel/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/text-field/text-field.js */ \"./src/components/text-field/text-field.js\");\n\n\n//# sourceURL=webpack://toxin-hotel/./src/pages/index.js?");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/index.js");
 /******/ 	
 /******/ })()
 ;

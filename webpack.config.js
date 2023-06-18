@@ -3,9 +3,9 @@ const PugPlugin = require('pug-plugin');
 
 module.exports = {
   entry: {
-    'index': './src/index.pug',
-    'colors-type': './src/colors-type.pug',
-    'form-elements': './src/form-elements.pug'
+    'index': './src/pages/index.pug',
+    'colors-type': './src/pages/colors-type/colors-type.pug',
+    'form-elements': './src/pages/form-elements/form-elements.pug'
   },
   output: {
     filename: '[name].js',
