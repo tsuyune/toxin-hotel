@@ -1,1 +1,1 @@
-import '../components/text-field/text-field.js';
+import 'Components/text-field/text-field.js';

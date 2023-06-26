@@ -15,17 +15,29 @@ module.exports = {
 
   mode: 'development',
 
+  resolve: {
+    alias: {
+      Img: path.join(__dirname, 'src/assets/img/'),
+      Fonts: path.join(__dirname, 'src/assets/fonts/'),
+      Svg: path.join(__dirname, 'src/assets/svg/'),
+      Components: path.join(__dirname, 'src/components/'),
+      Scss: path.join(__dirname, 'src/scss/'),
+      Layout: path.join(__dirname, 'src/layout/'),
+      Includes: path.join(__dirname, 'src/includes/'),
+      Mixins: path.join(__dirname, 'src/mixins/'),
+      Pages: path.join(__dirname, 'src/pages/'),
+    },
+  },
+
   plugins: [
     new PugPlugin({
-      pretty: true, // formatting HTML, useful for development mode
+      pretty: true,
       js: {
-        // output filename of extracted JS file from source script
         filename: 'js/[name].[contenthash:8].js',
       },
       css: {
-        // output filename of extracted CSS file from source style
         filename: 'css/[name].[contenthash:8].css',
-      },
+      }
     }),
   ],
 
@@ -41,17 +53,36 @@ module.exports = {
     },
     {
       test: /\.(css|sass|scss)$/,
-      use: ['css-loader', 'sass-loader'],
+      use: ['css-loader', 'sass-loader', 'postcss-loader'],
     },
     {
-      test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-      type: 'asset/inline',
-    },
-    {
-      test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+      test: /\.(woff2|woff|ttf|svg|eot)/,
       type: 'asset/resource',
+      generator: {
+        filename: 'assets/fonts/[name][ext]',
+      },
     },
-    ],
+    {
+      test: /\.(png|jpg|jpeg)/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'assets/images/[name].[hash:8][ext]',
+      },
+    },
+    {
+      test: /\.(svg)/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'assets/svg/[name].[hash:8][ext]',
+      },
+    },
+    {
+      test: /\.(ico)/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'assets/favicons/[name].[hash:8][ext]',
+      },
+    }]
   },
 
   devServer: {

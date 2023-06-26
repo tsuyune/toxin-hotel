@@ -1,0 +1,18 @@
+include Mixins/type
+
+mixin checkbox(ifRich=false, id='', name='', isChecked=false, isRequired=false, value='', labelTextPrimary='', labelTextSecondary='')
+  input.checkbox__input(
+    type='checkbox',
+    id=id,
+    name=name,
+    value=value,
+    checked=isChecked,
+    required=isRequired
+  )
+  label.checkbox__label(for=id)
+    .checkbox__box
+    if ifRich
+      +type('span', 'h2', labelTextPrimary, 'checkbox__text_primary')
+      +type('span', 'body', labelTextSecondary, 'checkbox__text_secondary')
+    else
+      +type('span', 'body', labelTextPrimary, 'checkbox__text_secondary')

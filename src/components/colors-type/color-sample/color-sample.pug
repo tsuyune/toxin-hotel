@@ -2,6 +2,6 @@ mixin color-sample(color, name)
   .color-sample
     .color-sample__box(style=`background-color: ` + color)
     .color-info__wrapper
-      include ../../../mixins/type
+      include Mixins/type
       +type('h2', 'h2', name, 'color-info__name')
       +type('h2', 'h2', color.length > 7 ? color.slice(0, -2) : color, 'color-info__hex')

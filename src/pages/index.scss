@@ -8,15 +8,17 @@ html {
     box-sizing: border-box;
 }
 
-@import '../scss/_variables';
-@import '../scss/_mixins';
-@import '../scss/_font-face';
-@import '../scss/_type';
+@import 'Scss/variables';
+@import 'Scss/mixins';
+@import 'Scss/font-face';
+@import 'Scss/type';
 
-@import '../layout/ui-kit';
-@import '../components/colors-type/type-sample/type-sample';
-@import '../components/colors-type/color-sample/color-sample';
-@import '../components/text-field/text-field';
+@import 'Layout/ui-kit';
+@import 'Components/colors-type/type-sample/type-sample';
+@import 'Components/colors-type/color-sample/color-sample';
+@import 'Components/text-field/text-field';
+@import 'Components/checkbox/checkbox';
+@import 'Components/radio-button/radio-button';
 
-@import 'colors-type/colors-type';
-@import 'form-elements/form-elements';
+@import 'Pages/colors-type/colors-type';
+@import 'Pages/form-elements/form-elements';

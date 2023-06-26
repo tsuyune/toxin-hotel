@@ -1,15 +1,28 @@
-extends ../../layout/ui-kit
+extends Layout/ui-kit
 
-include ../../components/text-field/text-field
+include Components/text-field/text-field
+include Components/checkbox/checkbox
+include Components/radio-button/radio-button
 
 block variables
   - var title = 'Form Elements';
 
 block content
-  .form-elements__wrapper
+  .page__wrapper
     .form-elements__columns
       .form-elements__column
-        +text-field('email', 'email', 'Text Field', 'Email', '32', '32', true)
-        +text-field('text', 'date', 'masked text field', 'ДД.ММ.ГГГГ', '32', '32', true, '00.00.0000')
+        +text-field('Text Field', 'email', 'text field', 'Email', '32', '32')
+        +text-field('Masked Text Field', 'text', 'masked text field', 'ДД.ММ.ГГГГ', '32', '32', false, '00.00.0000')
       .form-elements__column
+        .form-elements__wrapper.checkbox-buttons__wrapper
+          +type('h3', 'h3', 'checkbox buttons')
+          .checkbox-buttons__list
+            +checkbox(false, 'is-smoking-allowed', 'hotel-permits', false, false, 'smoking-allowed', 'Можно курить')
+            +checkbox(false, 'is-pets-allowed', 'hotel-permits', true, false, 'pets-allowed', 'Можно с питомцами')
+            +checkbox(false, 'is-guests-allowed', 'hotel-permits', true, false, 'guests-allowed', 'Можно пригласить гостей (до 10 человек)')
+        .form-elements__wrapper.radio-buttons__wrapper
+          +type('h3', 'h3', 'radio buttons')
+          .radio-buttons__list
+            +radio-button('male', 'gender', true, false, 'male', 'Мужчина')
+            +radio-button('female', 'gender', false, false, 'feemale', 'Женщина')
       .form-elements__column

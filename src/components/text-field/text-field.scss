@@ -1,35 +1,28 @@
 .text-field {
-    &__label {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        transition: all 0.3s ease-in-out;
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
 
-        &:hover {
-            .text-field__input {
-                border: 0.1rem solid $clr-dark-50p;
-                color: $clr-dark-75p;
-            }
-        }
+  &__input {
+    padding: 1.5rem 1.3rem;
+    max-height: 4.4rem;
+
+    border: 0.1rem solid $clr-dark-25p;
+    border-radius: 0.4rem;
+    color: $clr-dark-25p;
+
+    transition: all 0.3s ease-in-out;
+
+    &:focus,
+    &:active,
+    &:hover {
+      outline: none;
+      border: 0.1rem solid $clr-dark-50p;
+
+      color: $clr-dark-75p;
     }
-
-    &__input {
-        padding: 1.5rem 1.3rem;
-        max-width: 32rem;
-        max-height: 4.4rem;
-
-        border: 0.1rem solid $clr-dark-25p;
-        border-radius: 0.4rem;
-        color: $clr-dark-25p;
-
-        transition: all 0.3s ease-in-out;
-
-        &:focus,
-        &:active {
-            outline: none;
-            border: 0.1rem solid $clr-dark-50p;
-
-            color: $clr-dark-75p;
-        }
-    }
+  }
 }

@@ -1,8 +1,56 @@
-.form-elements__wrapper {
-  
+.page {
+  &__wrapper {
+    margin-top: 6.45rem;
+    margin-left: 14.25rem;
+    margin-right: 14.95rem;
+    margin-bottom: 14.5rem;
+
+    gap: 10rem 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.form-elements {
+  &__wrapper {
+    max-width: 22.2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.6rem;
+  }
+
   &__columns {
-    @include grid('max-content max-content max-content', 'initial')
+    @include grid(repeat(3, 32rem), initial);
   }
 
   &__column {}
+}
+
+.checkbox-buttons {
+  &__wrapper {
+    gap: 1.66rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.06rem;
+  }
+}
+
+.radio-buttons {
+  &__wrapper {
+    gap: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+  }
 }

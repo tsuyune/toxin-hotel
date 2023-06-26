@@ -1,8 +1,9 @@
-include ../../mixins/type
+include Mixins/type
 
-mixin text-field(type='text', name='', label=name, placeholder=name, size='64', maxLength='64', isRequired=false, mask=false)
+mixin text-field(labelText='', type='text', name='', placeholder=name, size=64, maxLength=64, isRequired=false, mask=false)
+  .text-field__wrapper
   label.text-field__label
-    +type('h3', 'h3', label, 'text-field__label_text')
+    +type('h3', 'h3', labelText)
     input.body.text-field__input(
       type=type,
       name=name,

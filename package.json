@@ -23,6 +23,7 @@
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@prettier/plugin-pug": "2.5.1",
     "auto-live-reload-webpack-plugin": "1.0.4",
+    "autoprefixer": "10.4.14",
     "babel-loader": "9.1.2",
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "11.0.0",
@@ -30,6 +31,7 @@
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "postcss": "8.4.23",
+    "postcss-flexbugs-fixes": "5.0.2",
     "postcss-loader": "7.3.0",
     "prettier": "2.8.8",
     "pug-plugin": "4.9.7",
@@ -44,5 +46,9 @@
     "jquery": "3.7.0",
     "jquery-mask-plugin": "1.14.16",
     "pug": "3.0.2"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 5 versions"
+  ]
 }
