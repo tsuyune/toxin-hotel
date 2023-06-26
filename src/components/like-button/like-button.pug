@@ -1,0 +1,11 @@
+include Mixins/type
+
+mixin like-button(name='', isActive=false, isRequired=false, value='', buttonText='')
+  button.like-button(
+    type='button',
+    name=name,
+    value=value,
+    active=isActive,
+    required=isRequired
+  )
+    +type('span', 'body', buttonText, 'like-button__text')

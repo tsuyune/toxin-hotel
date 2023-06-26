@@ -33,6 +33,8 @@
 
 .checkbox-buttons {
   &__wrapper {
+    margin-bottom: 4.88rem;
+
     gap: 1.66rem;
   }
 
@@ -46,11 +48,27 @@
 
 .radio-buttons {
   &__wrapper {
+    margin-bottom: 3.66rem;
+
     gap: 1.6rem;
   }
 
   &__list {
     display: flex;
     gap: 2rem;
+  }
+}
+
+.toggle {
+  &__wrapper {
+    margin-bottom: 4.04rem;
+
+    max-width: 26rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
   }
 }

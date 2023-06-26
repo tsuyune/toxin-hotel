@@ -1,0 +1,64 @@
+.toggle {
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__box {
+    width: 4rem;
+    height: 2rem;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 1rem;
+    border: 0.1rem solid $clr-dark-25p;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      width: 1.2rem;
+      height: 1.2rem;
+
+      left: 0.4rem;
+      position: absolute;
+
+      border-radius: 50%;
+
+      content: '';
+      background: linear-gradient(180deg, $clr-dark-25p 0%, $clr-dark-25p 100%);
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    .toggle__input:checked+.toggle__label>& {
+      border: 0.1rem solid $clr-primary;
+
+      transition: all 0.3s ease-in-out;
+
+      &::after {
+        left: 2.287rem;
+
+        background: $grad-primary;
+      }
+    }
+  }
+
+  &__text {
+    color: $clr-dark-75p;
+
+    line-height: 1.7143;
+  }
+}

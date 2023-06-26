@@ -3,6 +3,7 @@ extends Layout/ui-kit
 include Components/text-field/text-field
 include Components/checkbox/checkbox
 include Components/radio-button/radio-button
+include Components/toggle/toggle
 
 block variables
   - var title = 'Form Elements';
@@ -24,5 +25,10 @@ block content
           +type('h3', 'h3', 'radio buttons')
           .radio-buttons__list
             +radio-button('male', 'gender', true, false, 'male', 'Мужчина')
-            +radio-button('female', 'gender', false, false, 'feemale', 'Женщина')
+            +radio-button('female', 'gender', false, false, 'female', 'Женщина')
+        .form-elements__wrapper.toggle__wrapper
+          +type('h3', 'h3', 'toggle')
+          .toggle__list
+            +toggle('receive-newsletter', 'receive-newsletter', true, false, 'receive-newsletter', 'Получать спецпредложения')
+            +toggle('receive-newsletter-secondary', 'receive-newsletter', false, false, 'receive-newsletter', 'Получать спецпредложения')
       .form-elements__column

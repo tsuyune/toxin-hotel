@@ -1,14 +1,11 @@
 .checkbox {
   &__label {
     display: flex;
-    align-items: center;
     gap: 1rem;
 
     user-select: none;
 
-    &:hover {
-      cursor: pointer;
-    }
+    cursor: pointer;
   }
 
   &__input {
@@ -37,26 +34,22 @@
   }
 
   &__text {
-    &_primary {
+    margin-top: 0.1rem;
+
+    color: $clr-dark-50p;
+
+    line-height: 1.2857;
+
+    &_title {
       color: $clr-dark-75p;
 
-      &_main {
-        font-size: 1.4rem;
-
-        line-height: 1.2857;
-      }
-
-      &_rich {
-        font-size: 1.2rem;
-
-        line-height: 1.1667;
-      }
+      font-weight: 700;
     }
 
-    &_secondary {
-      color: $clr-dark-50p;
+    &_description {
+      font-size: 1.2rem;
 
-      line-height: 1.2857;
+      line-height: 1.1667;
     }
   }
 }

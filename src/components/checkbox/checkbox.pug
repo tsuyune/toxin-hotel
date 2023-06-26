@@ -12,7 +12,7 @@ mixin checkbox(ifRich=false, id='', name='', isChecked=false, isRequired=false, 
   label.checkbox__label(for=id)
     .checkbox__box
     if ifRich
-      +type('span', 'h2', labelTextPrimary, 'checkbox__text_primary')
-      +type('span', 'body', labelTextSecondary, 'checkbox__text_secondary')
+      +type('span', 'h2', labelTextPrimary, 'checkbox__text checkbox__text_title')
+      +type('span', 'body', labelTextSecondary, 'checkbox__text checkbox__text_description')
     else
-      +type('span', 'body', labelTextPrimary, 'checkbox__text_secondary')
+      +type('span', 'body', labelTextPrimary, 'checkbox__text checkbox__text_main')
