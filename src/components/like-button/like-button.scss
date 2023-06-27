@@ -1,5 +1,62 @@
+@keyframes heart-appearing {
+  from {
+    font-variation-settings:
+      'FILL' 0,
+  }
+
+  to {
+    font-variation-settings:
+      'FILL' 1,
+  }
+}
+
 .like-button {
+  flex-shrink: 0;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  width: 4rem;
+  height: 2rem;
+
+  border: 0.1rem solid $clr-dark-25p;
+  border-radius: 1rem;
+
+  background-color: #fff;
+
+  transition: all 0.3s ease-in-out;
+
+  &_selected {
+    border-color: $clr-primary;
+
+    .like-button__text {
+      color: $clr-primary;
+    }
+
+    .like-button__icon {
+      background: $grad-primary;
+      background-clip: text;
+      color: transparent;
+
+      animation: 0.3s heart-appearing forwards ease-in-out;
+    }
+  }
+
+  &__icon {
+    background: linear-gradient(180deg, $clr-dark-25p 0%, $clr-dark-25p 100%);
+    background-clip: text;
+    color: transparent;
+
+    transition: all 0.3s ease-in-out;
+  }
+
   &__text {
     font-size: 1rem;
+
+    color: $clr-dark-25p;
+
+    transition: all 0.3s ease-in-out;
   }
 }

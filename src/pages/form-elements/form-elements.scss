@@ -72,3 +72,16 @@
     gap: 1.4rem;
   }
 }
+
+.like-button {
+  &__wrapper {
+    margin-bottom: 4rem;
+
+    max-width: 8.97rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+  }
+}

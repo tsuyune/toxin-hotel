@@ -11,6 +11,7 @@ html {
 @import 'Scss/variables';
 @import 'Scss/mixins';
 @import 'Scss/font-face';
+@import 'Scss/material-icons';
 @import 'Scss/type';
 
 @import 'Layout/ui-kit';
@@ -21,6 +22,7 @@ html {
 @import 'Components/radio-button/radio-button';
 @import 'Components/toggle/toggle';
 @import 'Components/like-button/like-button';
+@import 'Components/rate-button/rate-button';
 
 @import 'Pages/colors-type/colors-type';
 @import 'Pages/form-elements/form-elements';

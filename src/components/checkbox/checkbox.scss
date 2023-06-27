@@ -22,6 +22,8 @@
     border-radius: 0.4rem;
     border: 0.1rem solid $clr-dark-25p;
 
+    background-color: #fff;
+
     .checkbox__input+.checkbox__label>& {
       background: url('Svg/checkmark/checkmark.svg') center center / 0 0 no-repeat;
       transition: all 0.3s ease-in-out;
