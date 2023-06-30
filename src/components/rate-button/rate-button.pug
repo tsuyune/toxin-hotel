@@ -1,3 +1,16 @@
-mixin rate-button ()
-    .rate-button
-        
+mixin rate-button(initialValue=0, maxValue=5)
+  - var starCount = 0;
+  - var starSides = ['left', 'right'];
+  .rate-button
+    while starCount < maxValue
+      .rate-button__star_wrapper
+        each side in starSides 
+          - var className = '';
+          - var starClass = `rate-button__star`;
+          if starCount > 0 && starCount==initialValue
+            - className = `${starClass}_${side} ${starClass}_active`;
+          else
+            - className class= `${starClass}_${side};
+
+          div(`class=${className}= 'grade'
+        - starCount++;

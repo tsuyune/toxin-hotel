@@ -1,5 +1,6 @@
 const path = require('path');
 const PugPlugin = require('pug-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -30,6 +31,10 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new PugPlugin({
       pretty: true,
       js: {

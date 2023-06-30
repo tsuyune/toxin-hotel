@@ -36,11 +36,15 @@ block content
         .form-elements__wrapper.like-button__wrapper
           +type('h3', 'h3', 'like button')
           .like-button__list
-            +like-button('like-button', true, '2', '2')
-            +like-button('like-button-secondary', false, '12', '12')
+            +like-button('like-button', true, 2, 2)
+            +like-button('like-button-secondary', false, 12, 12)
         .form-elements__wrapper.rate-button__wrapper
           +type('h3', 'h3', 'rate button')
           .rate-button__list
-            +rate-button('rate-button', true, false, '2', '2')
-            +rate-button('rate-button-secondary', false, false, '12', '12')
+            +rate-button
+            +rate-button(1)
+            +rate-button(2)
+            +rate-button(3)
+            +rate-button(4)
+            +rate-button(5)
       .form-elements__column
