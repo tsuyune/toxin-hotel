@@ -1,0 +1,23 @@
+extends Layout/ui-kit
+
+include Components/colors-type/color-sample/color-sample
+include Components/colors-type/type-sample/type-sample
+
+block variables
+  - var title = 'Colors & Type'
+
+block content 
+  .colors-type__wrapper
+    .colors__wrapper
+      +color-sample('#1F2041', 'Dark Shade 100%')
+      +color-sample('#1F2041BF', 'Dark Shade 75%')
+      +color-sample('#1F204180', 'Dark Shade 50%')
+      +color-sample('#1F204140', 'Dark Shade 25%')
+      +color-sample('#1F20410D', 'Dark Shade 5%')
+      +color-sample('#BC9CFF', 'Purple')
+      +color-sample('#6FCF97', 'Green')
+    .type__wrapper
+      +type-sample('h1', 'h1', 'This one is the sub-section or widget title')
+      +type-sample('h2', 'h2', 'Next one is the item title inside widgets')
+      +type-sample('h3', 'h3', 'This is a label or CTA text')
+      +type-sample('p', 'body', 'This is the body text which is used for most of\xa0the\xa0design, like paragraphs, lists, etc.')

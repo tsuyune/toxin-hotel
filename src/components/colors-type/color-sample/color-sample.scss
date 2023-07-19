@@ -1,0 +1,30 @@
+.color {
+  &-sample {
+    gap: 4rem;
+    
+    display: flex;
+    align-items: center;
+
+    &__box {
+      width: 7rem;
+      height: 7rem;
+
+      border-radius: 0.6rem;
+    }
+  }
+
+  &-info {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      display: flex;
+    }
+
+    &__hex {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "toxin-hotel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --env development",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyune/toxin-hotel.git"
+  },
+  "author": "Liudmila Fedorova (tsuyune)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsuyune/toxin-hotel/issues"
+  },
+  "homepage": "https://github.com/tsuyune/toxin-hotel#readme",
+  "devDependencies": {
+    "@babel/core": "7.21.8",
+    "@babel/preset-env": "7.21.5",
+    "@fullhuman/postcss-purgecss": "5.0.0",
+    "@prettier/plugin-pug": "2.5.1",
+    "auto-live-reload-webpack-plugin": "1.0.4",
+    "autoprefixer": "10.4.14",
+    "babel-loader": "9.1.2",
+    "clean-webpack-plugin": "4.0.0",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "6.7.3",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "postcss": "8.4.23",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-loader": "7.3.0",
+    "prettier": "2.8.8",
+    "pug-plugin": "4.9.7",
+    "sass": "1.62.0",
+    "sass-loader": "13.2.2",
+    "webpack": "5.80.0",
+    "webpack-cli": "5.0.2",
+    "webpack-dev-server": "4.13.3",
+    "webpack-remove-empty-scripts": "1.0.3"
+  },
+  "dependencies": {
+    "jquery": "3.7.0",
+    "jquery-mask-plugin": "1.14.16",
+    "pug": "3.0.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 5 versions"
+  ]
+}

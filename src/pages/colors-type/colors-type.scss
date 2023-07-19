@@ -1,0 +1,29 @@
+.colors-type__wrapper {
+  margin-top: 6.45rem;
+  margin-left: 14.25rem;
+  margin-right: 14.95rem;
+  margin-bottom: 14.5rem;
+  
+  gap: 10rem 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.colors__wrapper {
+  max-width: 28.126rem;
+  gap: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.type__wrapper {
+  max-width: 43.6rem;
+  gap: 4.75rem 3rem;
+
+  display: grid;
+  grid-template-columns: auto auto;
+}

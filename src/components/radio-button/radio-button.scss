@@ -1,0 +1,44 @@
+.radio-button {
+  display: flex;
+
+  cursor: pointer;
+  user-select: none;
+
+  &__input {
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 50%;
+    border: 0.1rem solid $clr-dark-25p;
+
+    outline-offset: -1rem;
+    transition: outline-offset 0.3s ease-in-out;
+
+    background-color: #fff;
+
+    appearance: none;
+
+    cursor: pointer;
+  }
+
+  &__text {
+    padding-left: 1rem;
+    line-height: 1.7143;
+
+    color: $clr-dark-50p;
+
+    cursor: pointer;
+  }
+
+  &__input:checked {
+    border: 0.1rem solid $clr-primary;
+    outline: 0.3rem solid #fff;
+    outline-offset: -0.4rem;
+
+    background: $grad-primary;
+
+    &+.radio-button__label>.radio-button__text {
+      color: $clr-dark-75p;
+    }
+  }
+}

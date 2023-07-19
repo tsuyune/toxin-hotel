@@ -1,0 +1,7 @@
+include Mixins/type
+
+mixin like-button(name='', isSelected=false, value='', initialValue='')
+  - className = 'like-button' + (isSelected ? ' like-button_selected' : ''),
+  button(type='button', name=name, value=value, class=className)
+    span.material-icons_outlined.like-button__icon favorite
+    +type('span', 'body', initialValue, 'like-button__text')

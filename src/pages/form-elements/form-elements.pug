@@ -1,0 +1,50 @@
+extends Layout/ui-kit
+
+include Components/text-field/text-field
+include Components/checkbox/checkbox
+include Components/radio-button/radio-button
+include Components/toggle/toggle
+include Components/like-button/like-button
+include Components/rate-button/rate-button
+
+block variables
+  - var title = 'Form Elements';
+
+block content
+  .page__wrapper
+    .form-elements__columns
+      .form-elements__column
+        +text-field('Text Field', 'email', 'text field', 'Email', '32', '32')
+        +text-field('Masked Text Field', 'text', 'masked text field', 'ДД.ММ.ГГГГ', '32', '32', false, '00.00.0000')
+      .form-elements__column
+        .form-elements__wrapper.checkbox-buttons__wrapper
+          +type('h3', 'h3', 'checkbox buttons')
+          .checkbox-buttons__list
+            +checkbox(false, 'is-smoking-allowed', 'hotel-permits', false, false, 'smoking-allowed', 'Можно курить')
+            +checkbox(false, 'is-pets-allowed', 'hotel-permits', true, false, 'pets-allowed', 'Можно с питомцами')
+            +checkbox(false, 'is-guests-allowed', 'hotel-permits', true, false, 'guests-allowed', 'Можно пригласить гостей (до 10 человек)')
+        .form-elements__wrapper.radio-buttons__wrapper
+          +type('h3', 'h3', 'radio buttons')
+          .radio-buttons__list
+            +radio-button('male', 'gender', true, false, 'male', 'Мужчина')
+            +radio-button('female', 'gender', false, false, 'female', 'Женщина')
+        .form-elements__wrapper.toggle__wrapper
+          +type('h3', 'h3', 'toggle')
+          .toggle__list
+            +toggle('receive-newsletter', 'receive-newsletter', true, false, 'receive-newsletter', 'Получать спецпредложения')
+            +toggle('receive-newsletter-secondary', 'receive-newsletter', false, false, 'receive-newsletter', 'Получать спецпредложения')
+        .form-elements__wrapper.like-button__wrapper
+          +type('h3', 'h3', 'like button')
+          .like-button__list
+            +like-button('like-button', true, 2, 2)
+            +like-button('like-button-secondary', false, 12, 12)
+        .form-elements__wrapper.rate-button__wrapper
+          +type('h3', 'h3', 'rate button')
+          .rate-button__list
+            +rate-button
+            +rate-button(1)
+            +rate-button(2)
+            +rate-button(3)
+            +rate-button(4)
+            +rate-button(5)
+      .form-elements__column

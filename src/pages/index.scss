@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import 'Scss/variables';
+@import 'Scss/mixins';
+@import 'Scss/font-face';
+@import 'Scss/material-icons';
+@import 'Scss/type';
+
+@import 'Layout/ui-kit';
+@import 'Components/colors-type/type-sample/type-sample';
+@import 'Components/colors-type/color-sample/color-sample';
+@import 'Components/text-field/text-field';
+@import 'Components/checkbox/checkbox';
+@import 'Components/radio-button/radio-button';
+@import 'Components/toggle/toggle';
+@import 'Components/like-button/like-button';
+@import 'Components/rate-button/rate-button';
+
+@import 'Pages/colors-type/colors-type';
+@import 'Pages/form-elements/form-elements';

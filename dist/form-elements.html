@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Form Elements</title>
+    <link href="/css/index.84d7572b.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.9998 32.4707C23.2234 32.4707 22.5881 31.8354 22.5881 31.0589C22.5881 25.6236 18.141 21.1766 12.7057 21.1766C11.9292 21.1766 11.2939 20.5413 11.2939 19.7648C11.2939 18.9883 11.9292 18.353 12.7057 18.353C19.7292 18.353 25.4116 24.0354 25.4116 31.0589C25.4116 31.8354 24.7763 32.4707 23.9998 32.4707Z"
+            fill="rgba(31, 32, 65, 0.25)"></path>
+          <path
+            d="M36.7058 19.7648C36.7058 20.5413 36.0705 21.1766 35.2941 21.1766C31.9411 21.1766 28.9411 22.8707 27.1764 25.4471C26.7882 24.4589 26.3294 23.5413 25.7646 22.6942C28.0941 20.0119 31.5176 18.353 35.2941 18.353C36.0705 18.353 36.7058 18.9883 36.7058 19.7648Z"
+            fill="rgba(31, 32, 65, 0.25)"></path>
+          <path
+            d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z"
+            fill="rgba(31, 32, 65, 0.25)"></path>
+        </svg></div>
+    </header>
+    <main>
+      <div class="page__wrapper">
+        <div class="form-elements__columns">
+          <div class="form-elements__column">
+            <div class="text-field__wrapper"></div><label class="text-field__label">
+              <h3 class="h3">Text Field</h3><input class="body text-field__input" type="email" name="text field"
+                placeholder="Email" size="32" maxlength="32">
+            </label>
+            <div class="text-field__wrapper"></div><label class="text-field__label">
+              <h3 class="h3">Masked Text Field</h3><input class="body text-field__input" type="text"
+                name="masked text field" placeholder="ДД.ММ.ГГГГ" size="32" maxlength="32" data-mask="00.00.0000">
+            </label>
+          </div>
+          <div class="form-elements__column">
+            <div class="form-elements__wrapper checkbox-buttons__wrapper">
+              <h3 class="h3">checkbox buttons</h3>
+              <div class="checkbox-buttons__list"><input class="checkbox__input" type="checkbox" id="is-smoking-allowed"
+                  name="hotel-permits" value="smoking-allowed"><label class="checkbox__label" for="is-smoking-allowed">
+                  <div class="checkbox__box"></div><span class="body checkbox__text checkbox__text_main">Можно
+                    курить</span>
+                </label><input class="checkbox__input" type="checkbox" id="is-pets-allowed" name="hotel-permits"
+                  value="pets-allowed" checked><label class="checkbox__label" for="is-pets-allowed">
+                  <div class="checkbox__box"></div><span class="body checkbox__text checkbox__text_main">Можно с
+                    питомцами</span>
+                </label><input class="checkbox__input" type="checkbox" id="is-guests-allowed" name="hotel-permits"
+                  value="guests-allowed" checked><label class="checkbox__label" for="is-guests-allowed">
+                  <div class="checkbox__box"></div><span class="body checkbox__text checkbox__text_main">Можно
+                    пригласить гостей (до 10 человек)</span>
+                </label></div>
+            </div>
+            <div class="form-elements__wrapper radio-buttons__wrapper">
+              <h3 class="h3">radio buttons</h3>
+              <div class="radio-buttons__list">
+                <div class="radio-button"><input class="radio-button__input" type="radio" id="male" name="gender"
+                    value="male" checked><label class="radio-button__label" for="male"><span
+                      class="body radio-button__text">Мужчина</span></label></div>
+                <div class="radio-button"><input class="radio-button__input" type="radio" id="female" name="gender"
+                    value="female"><label class="radio-button__label" for="female"><span
+                      class="body radio-button__text">Женщина</span></label></div>
+              </div>
+            </div>
+            <div class="form-elements__wrapper toggle__wrapper">
+              <h3 class="h3">toggle</h3>
+              <div class="toggle__list"><input class="toggle__input" type="checkbox" id="receive-newsletter"
+                  name="receive-newsletter" value="receive-newsletter" checked><label class="toggle__label"
+                  for="receive-newsletter">
+                  <div class="toggle__box"></div><span class="body toggle__text">Получать спецпредложения</span>
+                </label><input class="toggle__input" type="checkbox" id="receive-newsletter-secondary"
+                  name="receive-newsletter" value="receive-newsletter"><label class="toggle__label"
+                  for="receive-newsletter-secondary">
+                  <div class="toggle__box"></div><span class="body toggle__text">Получать спецпредложения</span>
+                </label></div>
+            </div>
+            <div class="form-elements__wrapper like-button__wrapper">
+              <h3 class="h3">like button</h3>
+              <div class="like-button__list"><button class="like-button like-button_selected" type="button"
+                  name="like-button" value="2"><span
+                    class="material-icons_outlined like-button__icon">favorite</span><span
+                    class="body like-button__text">2</span></button><button class="like-button" type="button"
+                  name="like-button-secondary" value="12"><span
+                    class="material-icons_outlined like-button__icon">favorite</span><span
+                    class="body like-button__text">12</span></button></div>
+            </div>
+            <div class="form-elements__wrapper rate-button__wrapper">
+              <h3 class="h3">rate button</h3>
+              <div class="rate-button__list">
+                <div class="rate-button">
+                  <div class="rate-button" data-rateit-mode="font" data-rateit-icon="@"></div>
+                </div>
+                <div class="rate-button">
+                  <div class="rate-button" data-rateit-mode="font" data-rateit-icon="@"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements__column"></div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/index.1.5ab06c70.js" defer="defer"></script>
+  </body>
+</html>
